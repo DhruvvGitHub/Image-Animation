@@ -94,17 +94,17 @@ nav {
 .images-container .image:nth-child(1) {
     left: 0%;
     z-index: 1;
-    transform: translate(0%, 0%) translateZ(-900px);
+    transform: translateZ(-900px);
 }
 
 .images-container .image:nth-child(2) {
     left: 30%;
-    z-index: 2;
-    transform: translate(0%, 0%) translateZ(500px);
+    z-index: 1;
+    transform: translateZ(500px);
 }
 
 .images-container .image:nth-child(3) {
     left: 60%;
     z-index: 1;
-    transform: translate(0%, 0%) translateZ(-900px);
+    transform: translateZ(-900px);
 }
