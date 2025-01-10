@@ -17,19 +17,18 @@ tl.to(".image", {
             
             // Get the parent container's width
             let parentWidth = image.parentElement.offsetWidth;
-            console.log(parentWidth);
             
             // Calculate the left value in percentage
             let leftPercentage = (leftPx / parentWidth) * 100;
             // console.log(leftPercentage);
             
             if (leftPercentage === 0) {
-                gsap.to(image, { left: '60%', duration: 1, scale: 0.5, zIndex: 1 });
+                gsap.to(image, { left: '60%', duration: 1.5, scale: 0.5, zIndex: 0 });
             } else if (leftPercentage > 29 & leftPercentage <= 31) {
-                gsap.to(image, { left: '0%', duration: 1, scale: 0.5, zIndex: 1 });
+                gsap.to(image, { left: '0%', duration: 1.55, scale: 0.5, zIndex: 1 });
             } 
             else if (leftPercentage > 59 & leftPercentage <= 61) {
-                gsap.to(image, { left: '30%', zIndex: 2, duration: 1, scale: 1 });
+                gsap.to(image, { left: '30%', zIndex: 5, duration: 1.5, scale: 1 });
             }
         });
     },
